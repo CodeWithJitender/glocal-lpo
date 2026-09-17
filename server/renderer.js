@@ -26,7 +26,7 @@ export default async (req, res) => {
 
 	const deviceInfo = getSelectorsByUserAgent(userAgent)
 
-	const statsFile = path.resolve(process.cwd(), 'build/public/loadable-stats.json');
+	const statsFile = path.resolve(__dirname, 'loadable-stats.json');
 
 	if (process.env.NODE_ENV !== 'production') {
 		try {
