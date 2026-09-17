@@ -1,0 +1,43 @@
+
+@font-face {
+	font-family: 'capsule3regular';
+	src: url('../../assets/fonts/capsule3-webfont.woff2') format('woff2'),
+			 url('../../assets/fonts/capsule3-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+.content {
+	margin: 0 auto;
+	display: grid;
+	place-items: center;
+}
+
+.clipElement {
+	opacity: 0;
+	position: absolute;
+	pointer-events: none;
+	width: 100%;
+	overflow: visible;
+}
+
+.poster {
+	width: 100%;
+	height: 75vh;
+	display: grid;
+	place-items: center;
+}
+
+.posterInner {
+	width: calc(100% + 10% * 2);
+	height: calc(100% + 10% * 2);
+	background-size: contain !important;
+	background-position: top left;
+	background-image: url("../../assets/images/service-silhout-image.jpg");
+}
+
+.textPath {
+	font-family: "capsule3regular", sans-serif;
+	font-weight: 400;
+	font-size: 30vw;
+}

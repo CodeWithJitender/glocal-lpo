@@ -1,0 +1,539 @@
+.masterHead {
+	padding-top: 200px !important;
+	padding-bottom: 100px !important;
+	padding-left: 0;
+	padding-right: 0;
+	background: linear-gradient(90deg, rgba(7, 12, 30, 0.8) 0%, rgba(7, 12, 30, 0.55) 45%, rgba(7, 12, 30, 0.15) 75%, rgba(7, 12, 30, 0.25) 100%),
+		linear-gradient(180deg, rgba(7, 12, 30, 0.45) 0%, rgba(7, 12, 30, 0.1) 35%, rgba(7, 12, 30, 1) 100%),
+		url("../assets/images/contact-us-bg.jpg") no-repeat top center;
+	background-size: cover;
+}
+
+
+.commonContainer {
+	padding: 0 50px;
+}
+
+.breadcrumb {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	color: #a4836f;
+	font-family: Poppins, sans-serif;
+	font-size: 16px;
+	list-style: none;
+	display: block;
+
+	li {
+		&::after {
+			content: "/";
+			margin: 0 8px;
+		}
+	}
+}
+
+.lpoTitle {
+	font-size: 100px;
+	text-shadow: 0 2px 10px rgba(0, 0, 0, 0.65);
+	width: 100%;
+
+	br {
+		display: none;
+	}
+}
+
+.aboutLPO {
+	padding: 50px 50px 100px;
+}
+
+.aboutHeading {
+	font-family: Poppins, sans-serif;
+	font-size: 20px;
+	color: #fff8f2;
+	margin-bottom: 20px;
+}
+
+.aboutText {
+	color: #c9b9b0;
+	margin: 10px 0;
+}
+
+.formSection {
+	background-color: #070c1e;
+	padding: 40px 0 40px;
+}
+
+.dividerContainer {
+	padding: 0 20px;
+}
+
+.sectionDivider {
+	position: relative;
+	text-align: center;
+	margin-top: 60px;
+
+	svg {
+		width: 120px;
+		position: relative;
+		z-index: 1;
+		fill: #a4836f;
+	}
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		transform: translateY(-50%);
+		height: 1px;
+		width: 100%;
+		background: #a4836f;
+		left: 0;
+	}
+
+	&::before {
+		top: calc(50% - 1px);
+	}
+
+	&::after {
+		top: calc(50% + 1px);
+	}
+}
+
+.contactAddressContainer {
+	background: url("../assets/images/contact-address-section-bg.jpg") no-repeat top center;
+	background-size: cover;
+	padding-top: 300px;
+	padding-bottom: 60px;
+}
+
+.careerSectionWrapper {
+	background-color: #070c1e;
+	padding: 30px 0 90px;
+}
+
+.careerCard {
+	position: relative;
+	background: linear-gradient(135deg, rgba(18, 26, 56, 0.95) 0%, rgba(9, 14, 32, 0.98) 100%);
+	backdrop-filter: blur(16px);
+	border: 1px solid rgba(164, 131, 111, 0.4);
+	border-radius: 14px;
+	padding: 36px 44px;
+	margin: 0 50px;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45), 0 0 30px rgba(164, 131, 111, 0.08);
+	overflow: hidden;
+	transition: border-color 0.3s ease, box-shadow 0.3s ease;
+
+	&::before {
+		content: "";
+		position: absolute;
+		top: -50%;
+		left: -20%;
+		width: 50%;
+		height: 200%;
+		background: radial-gradient(circle, rgba(164, 131, 111, 0.1) 0%, transparent 70%);
+		pointer-events: none;
+	}
+
+	&:hover {
+		border-color: rgba(222, 196, 165, 0.65);
+		box-shadow: 0 24px 60px rgba(0, 0, 0, 0.55), 0 0 35px rgba(164, 131, 111, 0.15);
+	}
+}
+
+.careerBadge {
+	display: inline-flex;
+	align-items: center;
+	gap: 8px;
+	padding: 5px 14px;
+	border-radius: 20px;
+	background: rgba(164, 131, 111, 0.16);
+	border: 1px solid rgba(164, 131, 111, 0.35);
+	color: #dec4a5;
+	font-family: Poppins, sans-serif;
+	font-size: 11px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+	margin-bottom: 14px;
+}
+
+.badgePulse {
+	width: 7px;
+	height: 7px;
+	border-radius: 50%;
+	background-color: #dec4a5;
+	box-shadow: 0 0 8px #dec4a5;
+	animation: pulseGlow 2s infinite ease-in-out;
+}
+
+@keyframes pulseGlow {
+
+	0%,
+	100% {
+		opacity: 1;
+		transform: scale(1);
+	}
+
+	50% {
+		opacity: 0.4;
+		transform: scale(0.85);
+	}
+}
+
+.careerHeading {
+	font-family: Antonio, sans-serif;
+	font-size: 26px;
+	color: #fff8f2;
+	margin: 0 0 10px;
+	line-height: 1.25;
+	font-weight: 500;
+}
+
+.careerDescription {
+	font-family: Poppins, sans-serif;
+	font-size: 15px;
+	color: #c9b9b0;
+	line-height: 1.65;
+	margin: 0;
+
+	strong {
+		color: #fff8f2;
+		font-weight: 600;
+	}
+}
+
+.careerCtaBox {
+	background: rgba(7, 12, 30, 0.7);
+	border: 1px solid rgba(164, 131, 111, 0.3);
+	border-radius: 10px;
+	padding: 18px 22px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	transition: border-color 0.3s ease;
+
+	&:hover {
+		border-color: rgba(222, 196, 165, 0.5);
+	}
+}
+
+.ctaLabel {
+	font-family: Poppins, sans-serif;
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	color: #a4836f;
+	margin-bottom: 8px;
+	font-weight: 600;
+}
+
+.careerEmailBtn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	color: #fff8f2;
+	font-family: Poppins, sans-serif;
+	font-size: 15px;
+	font-weight: 600;
+	text-decoration: none;
+	padding: 10px 16px;
+	border-radius: 8px;
+	background: linear-gradient(135deg, #a4836f 0%, #7d5f4c 100%);
+	box-shadow: 0 4px 14px rgba(164, 131, 111, 0.3);
+	transition: all 0.3s ease;
+
+	.emailArrow {
+		font-size: 18px;
+		transition: transform 0.25s ease;
+	}
+
+	&:hover {
+		background: linear-gradient(135deg, #bfa08c 0%, #8f6e59 100%);
+		transform: translateY(-2px);
+		box-shadow: 0 6px 20px rgba(164, 131, 111, 0.45);
+		color: #ffffff;
+
+		.emailArrow {
+			transform: translateX(4px);
+		}
+	}
+}
+
+.emailText {
+	color: inherit;
+}
+
+.addressContainer {
+	background: rgba(7, 12, 30, 0.9);
+	border-radius: 12px;
+	color: #fff8f2;
+	margin: 0 50px;
+	padding: 40px;
+}
+
+.infoContainer {
+	margin-bottom: 40px;
+}
+
+.title {
+	font-family: Antonio, sans-serif;
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+
+.address {
+	color: #c9b9b0;
+
+	a {
+		color: #c9b9b0;
+		text-decoration: none;
+	}
+}
+
+.mapFrame {
+	border: 0;
+	border-radius: 12px;
+	width: 100%;
+}
+
+.carouselHeadingSection {
+	padding: 40px 0;
+}
+
+.textCenter {
+	text-align: center;
+}
+
+.carouselSection {
+	background: #dec4a5;
+	margin-top: 150px;
+	margin-bottom: -60px;
+}
+
+.carouselBody {
+	position: relative;
+	top: -150px;
+}
+
+.carouselCard {
+	background: #433636;
+	color: #dec4a5;
+	border-radius: 6px;
+	padding: 32px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.testimonial {
+	background: url("../assets/icons/quote-icon.png") no-repeat top left;
+	background-size: 40px;
+	padding-left: 56px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: 500;
+	line-height: 1.3;
+}
+
+.clientInfoWrapper {
+	margin-left: 12px;
+	width: 100%;
+}
+
+.clientName {
+	font-family: Antonio, sans-serif;
+	font-size: 18px;
+	margin-bottom: 4px;
+}
+
+.designation {
+	font-size: 12px;
+}
+
+:global {
+	.slick-track {
+		display: flex !important;
+	}
+
+	.slick-slide {
+		height: inherit !important;
+	}
+
+	.slick-slide>div {
+		height: 100%;
+		margin-right: 20px;
+	}
+
+	.slick-slider {
+		width: 100%;
+	}
+
+	.slick-arrow {
+		fill: #CFB69A;
+		width: 40px;
+		height: 40px;
+		top: 50%;
+	}
+
+	.slick-prev {
+		transform: translateY(-50%) rotate(270deg);
+		left: -50px;
+	}
+
+	.slick-next {
+		transform: translateY(-50%) rotate(90deg);
+		right: -30px;
+	}
+}
+
+.imageListRoot {
+	margin: 0;
+}
+
+.imageListItem {
+	border-radius: 6px;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+:global {
+	.fslightbox-container {
+		background: rgba(7, 12, 30, 0.6) !important;
+		backdrop-filter: blur(9.5px);
+	}
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 901px) {
+	.headingContainer {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
+
+@media screen and (max-width: 900px) {
+
+	.sectionDivider {
+		margin-top: 40px;
+
+		svg {
+			width: 80px;
+		}
+	}
+
+	.dividerContainer {
+		padding: 0;
+	}
+
+	.carouselHeadingSection {
+		padding: 20px;
+	}
+
+	.founderContainer {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	.headingContainer {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	.commonContainer {
+		padding: 0 16px;
+	}
+
+	.aboutLPO {
+		padding: 0 16px;
+		// margin-bottom: 60px;
+	}
+
+	.masterHead {
+		padding-top: 150px;
+		padding-bottom: 50px;
+	}
+
+	.lpoTitle {
+		font-size: clamp(3.5rem, 6.5vw, 6.5rem);
+		width: 100%;
+	}
+
+	.formSection {
+		padding: 40px 16px;
+		margin-top: -1px;
+	}
+
+	.contactAddressContainer {
+		padding-top: 0px;
+	}
+
+	.careerSectionWrapper {
+		padding: 24px 0 40px;
+	}
+
+	.careerCard {
+		margin: 0 20px;
+		padding: 28px 20px;
+	}
+
+	.careerHeading {
+		font-size: clamp(20px, 4vw, 24px);
+	}
+
+	.careerCtaBox {
+		margin-top: 8px;
+		padding: 16px;
+	}
+
+	.addressContainer {
+		margin: 0;
+		padding: 24px;
+	}
+
+	:global {
+		.slick-slider {
+			width: 100%;
+		}
+
+		.slick-slide>div {
+			margin-right: 4px;
+		}
+
+		.slick-arrow {
+			fill: #070C1E;
+			top: auto;
+			bottom: -55px;
+		}
+
+		.slick-prev {
+			transform: rotate(270deg);
+			left: 39%;
+		}
+
+		.slick-next {
+			transform: rotate(90deg);
+			left: 54%;
+		}
+	}
+
+	.carouselCard {
+		padding: 20px;
+	}
+}
+
+
+@media screen and (max-width: 576px) {
+	.masterHead {
+		padding-top: 150px;
+		padding-bottom: 20px !important;
+	}
+
+	.contactAddressContainer {
+		padding-bottom: 20px;
+	}
+
+	.formSection {
+		padding: 40px 16px 0px;
+	}
+}

@@ -1,0 +1,270 @@
+.cardWrapper {
+	display: flex;
+	height: 100%;
+}
+
+.serviceBox {
+	border-radius: 24px;
+	padding: 20px;
+	border: 1px solid rgba(222, 196, 165, 0.22);
+	background: linear-gradient(180deg, rgba(20, 26, 45, 0.8) 0%, rgba(10, 14, 28, 0.95) 100%);
+	box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
+	backdrop-filter: blur(12px);
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	gap: 20px;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+		border-color 0.4s ease,
+		box-shadow 0.4s ease;
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 2px;
+		background: linear-gradient(90deg, transparent, rgba(222, 196, 165, 0.9), transparent);
+		opacity: 0;
+		transition: opacity 0.4s ease;
+	}
+
+	&:hover {
+		transform: translateY(-8px);
+		border-color: rgba(222, 196, 165, 0.6);
+		box-shadow: 0 24px 48px rgba(0, 0, 0, 0.65), 0 0 25px rgba(222, 196, 165, 0.15);
+
+		&::before {
+			opacity: 1;
+		}
+
+		.serviceBoxHeading {
+			color: #dec4a5;
+		}
+
+		.serviceBoxText {
+			color: #fff8f2;
+		}
+
+		.serviceImage {
+			transform: scale(1.08);
+		}
+
+		.connectWithUsButton {
+			background: #dec4a5;
+			color: #070c1e;
+			box-shadow: 0 6px 20px rgba(222, 196, 165, 0.35);
+
+			.buttonArrow {
+				transform: translateX(5px);
+			}
+		}
+	}
+}
+
+.imageColumn {
+	flex: 0 0 140px;
+	width: 140px;
+	align-self: flex-start;
+}
+
+.imageContainer {
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	border-radius: 16px;
+	overflow: hidden;
+	position: relative;
+	background: #070c1e;
+	box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.serviceImage {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.contentColumn {
+	flex: 1;
+	min-width: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.cardHeader {
+	display: flex;
+	flex-direction: column;
+}
+
+.serviceBoxHeading {
+	font-family: Antonio, sans-serif;
+	font-size: 20px;
+	line-height: 1.2;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin: 0 0 8px;
+	overflow-wrap: break-word;
+	word-break: break-word;
+	transition: color 0.3s ease;
+}
+
+.serviceBoxText {
+	font-family: Poppins, sans-serif;
+	font-size: 14px;
+	line-height: 1.55;
+	color: #c9b9b0;
+	margin: 0 0 16px;
+	overflow-wrap: break-word;
+	word-break: break-word;
+	transition: color 0.3s ease;
+}
+
+.cardFooter {
+	margin-top: auto;
+}
+
+.connectWithUsButton {
+	width: 100%;
+	border-radius: 50px;
+	background: #ffffff;
+	color: #070c1e;
+	padding: 10px 16px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+	text-decoration: none;
+	font-family: Poppins, sans-serif;
+	font-size: 13px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+	transition: all 0.3s ease;
+
+	.buttonArrow {
+		transition: transform 0.3s ease;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.imageColumn {
+		flex: 0 0 160px;
+		width: 160px;
+	}
+
+	.serviceBox {
+		padding: 20px;
+		gap: 18px;
+	}
+
+	.serviceBoxHeading {
+		font-size: 22px;
+	}
+
+	.connectWithUsButton {
+		padding: 11px 16px;
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.serviceBox {
+		padding: 20px 18px;
+		border-radius: 20px;
+	}
+
+	.imageColumn {
+		flex: 0 0 160px;
+		width: 160px;
+	}
+
+	.serviceBoxHeading {
+		font-size: 21px;
+	}
+
+	.serviceBoxText {
+		font-size: 13px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.serviceBox {
+		padding: 16px 14px;
+		border-radius: 18px;
+		gap: 14px;
+	}
+
+	.imageColumn {
+		flex: 0 0 100px;
+		width: 100px;
+	}
+
+	.imageContainer {
+		border-radius: 12px;
+	}
+
+	.serviceBoxHeading {
+		font-size: 17px;
+		margin-bottom: 6px;
+	}
+
+	.serviceBoxText {
+		font-size: 12px;
+		line-height: 1.45;
+		margin-bottom: 12px;
+	}
+
+	.connectWithUsButton {
+		padding: 9px 12px;
+		font-size: 11px;
+		gap: 6px;
+	}
+
+	.connectWithUsButton {
+		padding: 8px;
+		font-size: 10px;
+		gap: 5px;
+		max-width: 160px;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.serviceBox {
+		padding: 14px 12px;
+		gap: 10px;
+	}
+
+	.imageColumn {
+		flex: 0 0 85px;
+		width: 85px;
+	}
+
+	.imageContainer {
+		border-radius: 10px;
+	}
+
+	.serviceBoxHeading {
+		font-size: 15px;
+	}
+
+	.serviceBoxText {
+		font-size: 11px;
+		margin-bottom: 10px;
+	}
+
+	.connectWithUsButton {
+		padding: 8px 10px;
+		font-size: 10px;
+		gap: 5px;
+	}
+}

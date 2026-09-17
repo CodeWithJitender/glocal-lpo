@@ -1,0 +1,245 @@
+.infoContainer {
+	background-color: #DEC4A5;
+	position: relative;
+	overflow: hidden;
+}
+
+.infoHeadingSection {
+	padding: 80px 100px 120px;
+	background-color: #070C1E;
+}
+
+.infoSubHeading {
+	color: #8e6954;
+}
+
+.infoImage {
+	background: url("../../assets/images/flexi-chevron-bg.png"), linear-gradient(#070C1E, #070C1E);
+	background-size: 80px 80px, 100% 92px;
+	background-repeat: no-repeat;
+	background-position: top 12px right, top left;
+
+	img {
+		width: 100%;
+	}
+}
+
+.infoDetailSection {
+	padding: 80px 100px;
+}
+
+.infoDetail {
+	font-size: Poppins, sans-serif;
+	font-size: 16px;
+	margin-bottom: 40px;
+	color: #070c1e;
+}
+
+.smallHeading {
+	font-family: Antonio, sans-serif;
+	font-size: 28px;
+	color: #070c1e;
+	margin-bottom: 12px;
+	line-height: 1.2;
+}
+
+.perMonthHours {
+	font-family: Antonio, sans-serif;
+	font-size: 20px;
+	color: #8e6954;
+	line-height: 1.2;
+	margin-bottom: 20px;
+}
+
+.perWeekSection {
+	padding-bottom: 40px;
+	margin-bottom: 80px;
+	border-bottom: 5px solid #8e6954;
+
+	&Last {
+		margin-bottom: 40px;
+	}
+}
+
+.perWeekHours {
+	font-family: Antonio, sans-serif;
+	font-size: 50px;
+	color: #070c1e;
+	line-height: 1.2;
+}
+
+.perWeek {
+	font-size: 120px;
+	line-height: 1;
+}
+
+.weekDescription {
+	font-size: 20px;
+	font-family: Poppins, sans-serif;
+	font-weight: 500;
+	color: #070c1e;
+	line-height: 1.2;
+}
+
+.weekBulletPoints {
+	font-family: Poppins, sans-serif;
+	font-size: 14px;
+	list-style: none;
+	padding-left: 0;
+	margin: 32px 0;
+
+	li {
+		background-image: url("../../assets/icons/bullet.png");
+		background-repeat: no-repeat;
+		background-position: top 8px left;
+		background-size: 24px;
+		padding-left: 40px;
+		margin-bottom: 20px;
+	}
+}
+
+.consultWithUs {
+	padding: 20px 40px;
+	text-align: center;
+	border: 2px solid rgba(142, 105, 84, 50%);
+	color: #8e6954;
+	font-family: Poppins, sans-serif;
+	font-size: 16px;
+	cursor: pointer;
+	font-weight: 600;
+	border-radius: 6px;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-top: 8px;
+	display: inline-block;
+	transition: all ease-in-out 0.3s;
+
+	&:hover {
+		border-color: rgba(142, 105, 84, 1);
+		color: #070C1E;
+	}
+}
+
+.perWeekDescriptionSection {
+	margin-bottom: 40px;
+}
+
+
+@media screen and (max-width: 900px) {
+	.infoHeadingSection {
+		padding: 80px 72px 120px;
+		margin-right: 24px;
+		margin-left: -20px;
+		position: relative;
+		min-height: 400px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 15px;
+	}
+
+	.weekDescription {
+		font-size: 18px;
+	}
+
+	.infoHeadingSection:after,
+	.infoHeadingSection:before {
+		bottom: 100%;
+		border: solid transparent;
+		content: " ";
+		height: 0;
+		width: 0;
+		position: absolute;
+	}
+
+	.infoHeadingSection::before {
+		border-bottom-color: #413332;
+		border-width: 35px;
+		right: 14px;
+		top: auto;
+		bottom: 14px;
+		transform: rotate(-46deg);
+	}
+
+	.infoHeadingSection::after {
+		border-bottom-color: #dfc5a7;
+		border-width: 35px;
+		right: -37px;
+		top: auto;
+		bottom: -36px;
+		transform: rotate(134deg);
+	}
+
+	.infoDetail {
+		font-size: clamp(1.2rem, 2vw, 2rem);
+	}
+
+	.infoImage {
+		background: none;
+	}
+
+	.smallHeading {
+		// font-size: 60px;
+		font-size: clamp(2.5rem, 3.75vw, 3.75rem);
+	}
+
+	.perMonthHours {
+		font-size: 36px;
+	}
+
+	.perWeek {
+		// font-size: 140px;
+		font-size: clamp(4rem, 8.75vw, 8.75rem);
+	}
+
+	.perWeekHours {
+		font-size: clamp(1.5rem, 3.12vw, 3.12rem);
+	}
+
+	.weekBulletPoints {
+		font-size: 16px;
+	}
+
+	.consultWithUs {
+		display: block;
+		color: #000;
+	}
+}
+
+
+
+@media screen and (max-width: 600px) {
+	.infoDetailSection {
+		padding: 40px 10px;
+	}
+
+	.infoHeadingSection {
+		min-height: auto;
+		padding: 40px 30px 40px;
+	}
+
+	.perMonthHours {
+		margin-bottom: 0;
+	}
+
+	.perMonthHours {
+		font-size: 20px;
+	}
+
+	.perMonthHours {
+		margin-bottom: 0;
+	}
+
+	.perWeekSection {
+		padding-bottom: 40px;
+		margin-bottom: 40px;
+
+	}
+
+}
+
+@media screen and (max-width: 900px) {
+	.infoImage {
+		background: none;
+	}
+}

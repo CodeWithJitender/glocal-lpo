@@ -1,0 +1,25 @@
+.primaryHeading {
+	font-family: Antonio, sans-serif;
+	// font-size: 80px;
+	font-size: clamp(2.5rem, 5vw, 5rem);
+	color: #f7f5f3;
+	letter-spacing: -1px;
+	line-height: 1.2;
+	margin: 0;
+}
+
+.secondaryHeading {
+	font-family: Antonio, sans-serif;
+	// font-size: 50px;
+	font-size: clamp(2rem, 4vw, 3.2rem);
+	color: #a4836f;
+	letter-spacing: -1px;
+	margin: 0;
+}
+
+
+@media screen and (max-width: 900px) {
+	.secondaryHeading{
+		line-height: 1.3;
+	}
+}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Glocal LPO Insights &amp; Articles</title>
+    <link>https://www.glocallpo.com/blog</link>
+    <description>Expert insights on legal process outsourcing, paralegal services, litigation support, and back-office efficiency for U.S. law firms.</description>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 17 Sep 2026 04:35:31 GMT</lastBuildDate>
+    <atom:link href="https://www.glocallpo.com/feed.xml" rel="self" type="application/rss+xml" />
+    <image>
+      <url>https://www.glocallpo.com/assets/logo-b2b419b3.png</url>
+      <title>Glocal LPO</title>
+      <link>https://www.glocallpo.com/blog</link>
+    </image>
+    <item>
+      <title><![CDATA[How Outsourced Immigration Paralegal Services Save Time and Reduce Legal Costs]]></title>
+      <link>https://www.glocallpo.com/blog/how-outsourced-immigration-paralegal-services-save-time-and-reduce-legal-costs</link>
+      <guid isPermaLink="true">https://www.glocallpo.com/blog/how-outsourced-immigration-paralegal-services-save-time-and-reduce-legal-costs</guid>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 GMT</pubDate>
+      <category><![CDATA[Immigration]]></category>
+      <description><![CDATA[Learn how outsourced immigration paralegal services help U.S. law firms prepare USCIS forms, manage RFE responses, eliminate backlogs, and reduce legal costs.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Why U.S. Law Firms Are Outsourcing Paralegal Services in 2026]]></title>
+      <link>https://www.glocallpo.com/blog/why-us-law-firms-are-outsourcing-paralegal-services-in-2026</link>
+      <guid isPermaLink="true">https://www.glocallpo.com/blog/why-us-law-firms-are-outsourcing-paralegal-services-in-2026</guid>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 GMT</pubDate>
+      <category><![CDATA[Paralegal Services]]></category>
+      <description><![CDATA[Discover why U.S. law firms in 2026 are outsourcing paralegal services to reduce costs, expand capacity, accelerate turnaround times, and scale practice operations.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Your Definitive Checklist for Hiring the Right Legal Process Outsourcing Partner in 2026]]></title>
+      <link>https://www.glocallpo.com/blog/hiring-right-legal-process-outsourcing-partner</link>
+      <guid isPermaLink="true">https://www.glocallpo.com/blog/hiring-right-legal-process-outsourcing-partner</guid>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 GMT</pubDate>
+      <category><![CDATA[Legal Process Outsourcing]]></category>
+      <description><![CDATA[Use Glocal LPO’s unique VERDICT framework to evaluate, select, and partner with the best Legal Process Outsourcing (LPO) provider for your law firm in 2026.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[The ROI of Litigation Support Outsourcing for Personal Injury Law Firms]]></title>
+      <link>https://www.glocallpo.com/blog/litigation-support-outsourcing-for-personal-injury-law-firms</link>
+      <guid isPermaLink="true">https://www.glocallpo.com/blog/litigation-support-outsourcing-for-personal-injury-law-firms</guid>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 GMT</pubDate>
+      <category><![CDATA[Personal Injury]]></category>
+      <description><![CDATA[Discover the ROI of litigation support and paralegal outsourcing for U.S. personal injury law firms: medical chronologies, demand letters, discovery prep, and case management.]]></description>
+    </item>
+    <item>
+      <title><![CDATA[Data Security in Legal Process Outsourcing: What Law Firms Should Know]]></title>
+      <link>https://www.glocallpo.com/blog/data-security-in-legal-process-outsourcing</link>
+      <guid isPermaLink="true">https://www.glocallpo.com/blog/data-security-in-legal-process-outsourcing</guid>
+      <pubDate>Wed, 08 Apr 2026 00:00:00 GMT</pubDate>
+      <category><![CDATA[Data Security & Compliance]]></category>
+      <description><![CDATA[Learn how U.S. law firms ensure confidentiality, HIPAA & SOC 2 compliance, and enterprise data security when partnering with Legal Process Outsourcing providers.]]></description>
+    </item>
+  </channel>
+</rss>

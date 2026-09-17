@@ -1,0 +1,27 @@
+.button {
+	padding: 20px 28px;
+	border: solid 2px rgba(201, 185, 176, 0.3);
+	font-family: Poppins, sans-serif;
+	text-align: center;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #c9b9b0;
+	text-decoration: none;
+	border-radius: 6px;
+	margin-right: 20px;
+	transition: all ease-in-out .3s;
+	display: inline-block;
+
+	&:hover {
+		border-color: rgba(201, 185, 176, 1);
+		color: #fff;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.button {
+		display: block;
+		margin: 0;
+		font-size: 16px;
+	}
+}

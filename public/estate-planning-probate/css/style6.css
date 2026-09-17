@@ -1,0 +1,1874 @@
+/* ============================================
+   GLOCAL LPO — Personal Injury Landing Page
+   Design System + All Sections
+   ============================================ */
+
+/* ---- Base ---- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    color: #121323;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* ---- Typography ---- */
+.glocalmainheading {
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1.25;
+}
+
+.headingclor {
+    color: #D0AE88;
+}
+
+.glocalsubheading {
+    color: #121323;
+}
+
+/* ---- Micro-animation: Fade-in-up for text ---- */
+@-webkit-keyframes fadeInUp {
+    from { opacity: 0; -webkit-transform: translateY(20px); transform: translateY(20px); }
+    to   { opacity: 1; -webkit-transform: translateY(0);    transform: translateY(0); }
+}
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+
+/* =========================================
+   1. HERO / HEADER
+   ========================================= */
+.mainheader {
+    background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#c9a97f));
+    background: linear-gradient(359deg, #ffffff, #c9a97f);
+    padding: 24px 0 120px 0;
+    position: relative;
+}
+
+.topbar {
+    margin-bottom: 50px;
+}
+
+.mainheader img.logo-img {
+    width: 100%;
+    max-width: 140px;
+}
+
+.phone-btn {
+    background: rgba(255,255,255,0.15);
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000;
+    -webkit-box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.phone-btn:hover {
+    color: #000;
+    background: rgba(255,255,255,0.35);
+    -webkit-transform: translateY(-2px);
+        -ms-transform: translateY(-2px);
+            transform: translateY(-2px);
+}
+
+/* Hero Text */
+.hero-content h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #121323;
+}
+
+.hero-content h3 {
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 42px;
+    color: #121323;
+}
+
+.hero-content p {
+    font-size: 17px;
+    margin-top: 28px;
+    max-width: 400px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #333;
+}
+
+/* Typed Text */
+.typed-wrapper {
+    display: inline-block;
+    min-width: 220px;
+    text-align: left;
+}
+
+#typed-text::after {
+    content: "|";
+    margin-left: 5px;
+    -webkit-animation: blink 1.0s infinite;
+            animation: blink 1.0s infinite;
+}
+
+@-webkit-keyframes blink {
+    0%,100% { opacity: 1; }
+    50%     { opacity: 0; }
+}
+@keyframes blink {
+    0%,100% { opacity: 1; }
+    50%     { opacity: 0; }
+}
+
+
+/* =========================================
+   FORM CARD
+   ========================================= */
+.form-card {
+    background: #f4f4f4;
+    padding: 35px;
+    border-radius: 20px;
+    -webkit-box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    max-width: 510px;
+    margin: 0 auto;
+}
+
+.form-card h3 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 5px;
+    font-size: 21px;
+}
+
+.form-card small {
+    display: block;
+    text-align: center;
+    margin-bottom: 25px;
+    color: #777;
+    font-size: 13px;
+    line-height: 18px;
+}
+
+.form-control {
+    border: none;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0;
+    background: transparent !important;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    padding-left: 0;
+    font-size: 14px;
+    -webkit-transition: border-color 0.3s ease;
+    -o-transition: border-color 0.3s ease;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border-color: #D0AE88;
+}
+
+/* ---- Select Dropdown (underline style, premium) ---- */
+select.form-select-field {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23D0AE88' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E") !important;
+    background-repeat: no-repeat !important;
+    background-position: right 2px center !important;
+    background-size: 12px !important;
+    padding-right: 28px;
+    cursor: pointer;
+    color: #bbb;
+    font-size: 14px;
+}
+
+select.form-select-field option {
+    padding: 10px 14px;
+    font-size: 14px;
+    color: #333;
+    background: #fff;
+}
+
+select.form-select-field option:checked {
+    background: rgba(208,174,136,0.12);
+    color: #121323;
+}
+
+select.form-select-field:focus {
+    border-bottom-color: #D0AE88;
+}
+
+/* When a real option is selected (not placeholder) */
+select.form-select-field:not(:invalid) {
+    color: #333;
+}
+
+/* ---- Field Label (e.g. DOCUMENT TYPE) ---- */
+.form-field-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #999;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+    margin-top: 4px;
+}
+
+/* ---- Filled Textarea (dark bg, rounded) ---- */
+.form-textarea-filled {
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 10px !important;
+    background: #f0f0f0 !important;
+    padding: 14px 16px !important;
+    min-height: 72px;
+    max-height: 120px;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+.form-card .form-textarea-filled {
+    border-color: #e5e5e5 !important;
+    background: #ebebeb !important;
+}
+
+textarea.form-control:not(.form-textarea-filled) {
+    max-height: 44px;
+    min-height: 44px;
+}
+
+/* ---- Light Placeholders ---- */
+.form-card input::-webkit-input-placeholder,
+.form-card textarea::-webkit-input-placeholder,
+.form-card select::-webkit-input-placeholder {
+    color: #bbb;
+    font-size: 14px;
+}
+.form-card input::placeholder,
+.form-card textarea::placeholder,
+.form-card select::placeholder {
+    color: #bbb;
+    font-size: 14px;
+}
+
+.form-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    gap: 14px;
+    margin-top: 28px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+}
+
+.submit-btn {
+    background: -webkit-gradient(linear, left top, right top, from(#2e2a47), to(#b78c6a));
+    background: linear-gradient(to right, #2e2a47, #b78c6a);
+    color: #fff;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-weight: 500;
+    font-size: 14px;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    letter-spacing: 0.3px;
+}
+
+.submit-btn:hover {
+    opacity: 0.9;
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02);
+}
+
+/* ---- Trust Note ---- */
+.form-trust-note {
+    text-align: center;
+    font-size: 11px;
+    color: #999;
+    margin-top: 14px;
+    margin-bottom: 0;
+    line-height: 17px;
+    letter-spacing: 0.2px;
+}
+
+.lock-icon {
+    vertical-align: -2px;
+    margin-right: 3px;
+    opacity: 0.7;
+}
+
+.telicon {
+    -webkit-filter: grayscale(1);
+            filter: grayscale(1);
+}
+
+
+/* =========================================
+   STATS SLIDING BAR
+   ========================================= */
+.stats-slider {
+    background: #121323;
+    padding: 14px 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.stats-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-animation: scrollStats 28s linear infinite;
+            animation: scrollStats 28s linear infinite;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    will-change: transform;
+}
+
+.stat-item {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 300;
+    white-space: nowrap;
+    padding: 0 24px;
+}
+
+.stat-number {
+    color: #D0AE88;
+    font-weight: 600;
+}
+
+.stat-divider {
+    color: #D0AE88;
+    font-size: 8px;
+    padding: 0 6px;
+    opacity: 0.6;
+}
+
+@-webkit-keyframes scrollStats {
+    0%   { -webkit-transform: translateX(0); transform: translateX(0); }
+    100% { -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+}
+@keyframes scrollStats {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+
+/* =========================================
+   SECTION SPACING
+   ========================================= */
+.sectionmargin_top {
+    margin-top: 100px;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+
+/* =========================================
+   2. WHAT WE DO
+   ========================================= */
+.whatwedo-subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+}
+
+.whatwedo-intro {
+    font-size: 16px;
+    color: #666;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 26px;
+}
+
+/* ---- Service Grid (2x2) ---- */
+.service-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 24px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.service-card {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    padding: 36px 30px;
+    text-align: center;
+    position: relative;
+    -webkit-transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    -o-transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    overflow: hidden;
+}
+
+/* Gold top border — slides in on hover */
+.service-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: -webkit-gradient(linear, left top, right top, from(#D0AE88), to(#c9a97f));
+    background: linear-gradient(to right, #D0AE88, #c9a97f);
+    -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: -webkit-transform 0.4s ease;
+    transition: transform 0.4s ease;
+    -webkit-transform-origin: left;
+        -ms-transform-origin: left;
+            transform-origin: left;
+}
+
+.service-card:hover::before {
+    -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+            transform: scaleX(1);
+}
+
+.service-card:hover {
+    -webkit-transform: translateY(-6px);
+        -ms-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.08);
+    border-color: rgba(208,174,136,0.3);
+}
+
+/* Icon Circle */
+.card-icon {
+    width: 64px;
+    height: 64px;
+    background: -webkit-gradient(linear, left top, right bottom, from(#121323), to(#2e2a47));
+    background: linear-gradient(135deg, #121323, #2e2a47);
+    border-radius: 50%;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-bottom: 20px;
+    -webkit-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+}
+
+.service-card:hover .card-icon {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-box-shadow: 0 8px 24px rgba(18,19,35,0.3);
+            box-shadow: 0 8px 24px rgba(18,19,35,0.3);
+}
+
+/* Card Text */
+.service-card h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #121323;
+    margin-bottom: 10px;
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.service-card:hover h5 {
+    color: #D0AE88;
+}
+
+.service-card p {
+    font-size: 14px;
+    color: #666;
+    line-height: 22px;
+    margin-bottom: 18px;
+}
+
+/* Tag Pills */
+.card-tags {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    gap: 8px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-tags li {
+    background: rgba(208,174,136,0.1);
+    color: #b8956e;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(208,174,136,0.2);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .card-tags li {
+    background: rgba(208,174,136,0.18);
+    border-color: rgba(208,174,136,0.4);
+}
+
+
+/* =========================================
+   3. CASE LIFECYCLE
+   ========================================= */
+.support-wrapper {
+    position: relative;
+}
+
+.support-col {
+    padding: 10px 0;
+}
+
+
+h5.support-title {
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+
+
+.support-subtitle {
+    color: #D0AE88;
+    font-size: 13px;
+    font-weight: 500;
+    margin-bottom: 18px;
+    letter-spacing: 0.5px;
+}
+
+.support-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.support-list li {
+    font-size: 15px;
+    color: #444;
+    line-height: 26px;
+    padding: 6px 0;
+    position: relative;
+    padding-left: 24px;
+    -webkit-transition: color 0.25s ease;
+    -o-transition: color 0.25s ease;
+    transition: color 0.25s ease;
+}
+
+.support-list li:hover {
+    color: #121323;
+}
+
+/* Dash at START for ALL items */
+.support-list li::before {
+    content: "\2014";
+    position: absolute;
+    left: 0;
+    color: #D0AE88;
+    font-weight: 600;
+}
+
+/* Left column (support-col-right) — aligned to the right on desktop, towards the center line */
+.support-col-right {
+    text-align: right;
+}
+
+.support-col-right .support-title,
+.support-col-right .support-subtitle {
+    text-align: right;
+}
+
+.support-col-right .support-list li {
+    padding-right: 24px;
+    padding-left: 0;
+    text-align: right;
+}
+
+.support-col-right .support-list li::before {
+    right: 0;
+    left: auto;
+}
+
+.vertical-line {
+    border-left: 2px solid #D0AE88;
+    height: 100%;
+    min-height: 220px;
+    opacity: 0.3;
+}
+
+.support-section p.support-subtitle {
+    color: #D0AE88;
+}
+
+
+/* =========================================
+   4. HOW OUR PROCESS WORKS (Horizontal)
+   ========================================= */
+.process-section {
+    background: #faf7f4;
+}
+
+.process-horizontal {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+        align-items: flex-start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    gap: 0;
+    position: relative;
+}
+
+.process-h-step {
+    text-align: center;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+        flex: 1;
+    max-width: 200px;
+    position: relative;
+}
+
+.step-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #121323;
+    color: #D0AE88;
+    font-size: 18px;
+    font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin: 0 auto 16px;
+    -webkit-transition: all 0.35s ease;
+    -o-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.process-h-step:hover .step-circle {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-box-shadow: 0 8px 24px rgba(18,19,35,0.25);
+            box-shadow: 0 8px 24px rgba(18,19,35,0.25);
+}
+
+.process-h-step h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #121323;
+    margin-bottom: 6px;
+}
+
+.process-h-step p {
+    font-size: 13px;
+    color: #666;
+    line-height: 20px;
+    margin-bottom: 0;
+    padding: 0 6px;
+}
+
+/* Horizontal connector line */
+.process-h-connector {
+    width: 40px;
+    height: 2px;
+    background: -webkit-gradient(linear, left top, right top, from(#D0AE88), to(rgba(208,174,136,0.3)));
+    background: linear-gradient(to right, #D0AE88, rgba(208,174,136,0.3));
+    margin-top: 30px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+}
+
+
+/* =========================================
+   5. BOTTLENECKS / GROWING PRACTICE
+   ========================================= */
+.growing-section img.growing-img {
+    max-height: 620px;
+    border-radius: 16px;
+}
+
+.problem-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    gap: 28px;
+    padding: 20px 25px;
+    border-radius: 14px;
+    border: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    background: #fff;
+}
+
+.problem-box:hover {
+    -webkit-transform: translateY(-6px);
+        -ms-transform: translateY(-6px);
+            transform: translateY(-6px);
+    -webkit-box-shadow: 0 16px 36px rgba(0,0,0,0.08);
+            box-shadow: 0 16px 36px rgba(0,0,0,0.08);
+    border-color: #D0AE88;
+}
+
+
+
+.problem-content h5 {
+    font-size: 17px;
+    font-weight: 600;
+    color: #121323;
+    margin-bottom: 4px;
+}
+
+.problem-content p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 0;
+    line-height: 22px;
+}
+
+
+/* =========================================
+   6. TYPES OF CASES
+   ========================================= */
+.casetypes-section {
+    background: #faf7f4;
+}
+
+.case-tags {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 12px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.case-tag {
+    background: #fff;
+    border: 1px solid #e3d2bf;
+    border-radius: 30px;
+    padding: 10px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.case-tag:hover {
+    background: #D0AE88;
+    color: #fff;
+    border-color: #D0AE88;
+    -webkit-transform: translateY(-3px);
+        -ms-transform: translateY(-3px);
+            transform: translateY(-3px);
+    -webkit-box-shadow: 0 8px 20px rgba(208,174,136,0.3);
+            box-shadow: 0 8px 20px rgba(208,174,136,0.3);
+}
+
+
+/* =========================================
+   7. TRUST BADGES
+   ========================================= */
+.trust-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 20px 1fr 20px 1fr 20px 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.trust-card {
+    background: #fff;
+    border: 1px solid #e3d2bf;
+    border-radius: 16px;
+    padding: 30px 18px;
+    text-align: center;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.trust-card:hover {
+    -webkit-transform: translateY(-8px);
+        -ms-transform: translateY(-8px);
+            transform: translateY(-8px);
+    -webkit-box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.trust-icon {
+    width: 60px;
+    height: 60px;
+    background: #121323;
+    border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin: 0 auto 14px;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.trust-icon i {
+    color: #D0AE88;
+    font-size: 22px;
+}
+
+.trust-card:hover .trust-icon {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+.trust-card h5 {
+    font-size: 15px;
+    font-weight: 600;
+    color: #121323;
+    margin-bottom: 8px;
+}
+
+.trust-card p {
+    font-size: 13px;
+    color: #666;
+    line-height: 20px;
+    margin-bottom: 0;
+}
+
+
+/* =========================================
+   8. SEAMLESS INTEGRATION (Logo Carousel)
+   ========================================= */
+.logobox img {
+    max-height: 50px;
+    opacity: 0.65;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-filter: grayscale(30%);
+            filter: grayscale(30%);
+}
+
+.logobox img:hover {
+    opacity: 1;
+    -webkit-filter: grayscale(0);
+            filter: grayscale(0);
+}
+
+
+/* =========================================
+   9. TESTIMONIALS (Pinterest Style)
+   ========================================= */
+.testimonials-section {
+    background: #f8f5f1;
+    overflow: hidden;
+}
+
+/* ---- Big White Container Card ---- */
+.testimonial-container {
+    background: #fff;
+    border-radius: 28px;
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 46px 50px 46px;
+    -webkit-box-shadow: 0 8px 50px rgba(0,0,0,0.06);
+            box-shadow: 0 8px 50px rgba(0,0,0,0.06);
+    position: relative;
+    overflow: visible;
+}
+
+/* ---- Big Quote Mark — TOP LEFT ---- */
+.testimonial-big-quote {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 90px;
+    color: #D0AE88;
+    line-height: 0.5;
+    text-align: left;
+    margin-bottom: 6px;
+    opacity: 0.3;
+    pointer-events: none;
+}
+
+/* ---- Gold underline under heading ---- */
+.testimonial-container .glocalmainheading::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #D0AE88;
+    margin: 16px auto 0;
+    border-radius: 2px;
+}
+
+/* ---- Scrolling Wrapper — FULL VIEWPORT WIDTH ---- */
+.testimonial-wrapper {
+    overflow: hidden;
+    position: relative;
+    padding: 30px 0 10px;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+}
+
+/* Soft fade edges — cream bg at SCREEN EDGES */
+.testimonial-wrapper::before,
+.testimonial-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 80px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.testimonial-wrapper::before {
+    left: 0;
+    background: -webkit-gradient(linear, left top, right top, from(#f8f5f1), to(transparent));
+    background: linear-gradient(to right, #f8f5f1, transparent);
+}
+
+.testimonial-wrapper::after {
+    right: 0;
+    background: -webkit-gradient(linear, right top, left top, from(#f8f5f1), to(transparent));
+    background: linear-gradient(to left, #f8f5f1, transparent);
+}
+
+/* ---- Scrolling Track ---- */
+.testimonial-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    -webkit-animation: scrollTestimonials 40s linear infinite;
+            animation: scrollTestimonials 40s linear infinite;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    will-change: transform;
+    padding: 0 20px;
+}
+
+.testimonial-track:hover {
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+}
+
+@-webkit-keyframes scrollTestimonials {
+    0%   { -webkit-transform: translateX(0); transform: translateX(0); }
+    100% { -webkit-transform: translateX(-50%); transform: translateX(-50%); }
+}
+@keyframes scrollTestimonials {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+/* ---- Individual Cards ---- */
+.testimonial-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 28px 22px 24px;
+    min-width: 290px;
+    max-width: 290px;
+    -webkit-box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+            box-shadow: 0 4px 18px rgba(0,0,0,0.07);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    border: 1px solid rgba(0,0,0,0.04);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    text-align: center;
+}
+
+.testimonial-card:hover {
+    -webkit-transform: translateY(-4px);
+        -ms-transform: translateY(-4px);
+            transform: translateY(-4px);
+    -webkit-box-shadow: 0 10px 28px rgba(0,0,0,0.1);
+            box-shadow: 0 10px 28px rgba(0,0,0,0.1);
+}
+
+/* ---- Avatar ---- */
+.testimonial-card .author-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #121323;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    color: #D0AE88;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 10px;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+}
+
+/* ---- Author Info ---- */
+.author-name {
+    font-size: 15px;
+    font-weight: 600;
+    color: #121323;
+    margin-bottom: 2px;
+}
+
+.author-role {
+    font-size: 12px;
+    color: #999;
+    display: block;
+    margin-bottom: 14px;
+}
+
+/* ---- Text ---- */
+.testimonial-text {
+    font-size: 13.5px;
+    color: #555;
+    line-height: 22px;
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+        flex-grow: 1;
+}
+
+
+/* =========================================
+   10. FAQ
+   ========================================= */
+.faq-wrapper {
+    max-width: 780px;
+    margin: 0 auto;
+}
+
+.faq-wrapper .accordion-item {
+    border: none;
+    border-bottom: 1px solid #e8e4df;
+    background: transparent;
+}
+
+.faq-wrapper .accordion-item:last-child {
+    border-bottom: none;
+}
+
+.faq-wrapper .accordion-button {
+    background: transparent;
+    font-weight: 600;
+    font-size: 16px;
+    color: #121323;
+    padding: 22px 0;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.faq-wrapper .accordion-button:not(.collapsed) {
+    color: #D0AE88;
+    background: transparent;
+}
+
+.faq-wrapper .accordion-button:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+}
+
+.faq-wrapper .accordion-button::after {
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.faq-wrapper .accordion-body {
+    padding: 0 0 22px 0;
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+}
+
+
+/* =========================================
+   11. FINAL CTA + FORM
+   ========================================= */
+.cta-footer {
+    background: #121323;
+    padding: 80px 0 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    color: #fff;
+}
+
+.cta-content h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #fff;
+}
+
+.cta-subtitle {
+    color: #D0AE88;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.cta-description {
+    font-size: 15px;
+    color: rgba(255,255,255,0.65);
+    line-height: 24px;
+    margin-bottom: 30px;
+    max-width: 400px;
+}
+
+.cta-checks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cta-checks li {
+    font-size: 14px;
+    color: rgba(255,255,255,0.8);
+    padding: 7px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    gap: 10px;
+}
+
+.cta-checks li .check-mark {
+    color: #D0AE88;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* CTA Form */
+.cta-form-card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    padding: 35px;
+    border-radius: 20px;
+    -webkit-backdrop-filter: blur(10px);
+            backdrop-filter: blur(10px);
+}
+
+.cta-form-card h3 {
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 24px;
+}
+
+.cta-form-card .form-control {
+    border-bottom-color: rgba(255,255,255,0.15);
+    color: #fff;
+}
+
+.cta-form-card .form-control:focus {
+    border-color: #D0AE88;
+}
+
+.cta-form-card .form-select-field {
+    color: rgba(255,255,255,0.35);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' fill='%23D0AE88' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E") !important;
+}
+.cta-form-card .form-select-field:not(:invalid) {
+    color: #fff;
+}
+.cta-form-card .form-select-field option {
+    background: #1a1a2e;
+    color: #eee;
+    padding: 10px;
+}
+.cta-form-card .form-select-field option:checked {
+    background: rgba(208,174,136,0.2);
+    color: #fff;
+}
+
+.cta-form-card .form-field-label {
+    color: rgba(255,255,255,0.5);
+}
+
+.cta-form-card .form-textarea-filled {
+    border-color: rgba(255,255,255,0.1) !important;
+    background: rgba(255,255,255,0.06) !important;
+    color: #fff;
+}
+
+.cta-form-card input::-webkit-input-placeholder,
+.cta-form-card textarea::-webkit-input-placeholder {
+    color: rgba(255,255,255,0.3);
+    font-size: 14px;
+}
+.cta-form-card input::placeholder,
+.cta-form-card textarea::placeholder {
+    color: rgba(255,255,255,0.3);
+    font-size: 14px;
+}
+
+.cta-form-card .submit-btn {
+    background: -webkit-gradient(linear, left top, right top, from(#D0AE88), to(#c9a97f));
+    background: linear-gradient(to right, #D0AE88, #c9a97f);
+    color: #121323;
+    font-weight: 600;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin-top: 10px;
+}
+
+.cta-form-card .submit-btn:hover {
+    opacity: 0.9;
+    -webkit-transform: scale(1.03);
+        -ms-transform: scale(1.03);
+            transform: scale(1.03);
+}
+
+.cta-form-card .form-trust-note {
+    color: rgba(255,255,255,0.45);
+}
+
+/* CTA Footer Info */
+.cta-footer-info {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.cta-footer-info a {
+    color: rgba(255,255,255,0.6);
+    text-decoration: none;
+    font-size: 13px;
+    margin: 0 16px;
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    transition: color 0.3s ease;
+}
+
+.cta-footer-info a:hover {
+    color: #D0AE88;
+}
+
+.cta-footer-info .footer-divider {
+    color: rgba(255,255,255,0.2);
+}
+
+
+/* =========================================
+   OWL CAROUSEL OVERRIDES
+   ========================================= */
+.trusted-carousel.owl-carousel .owl-stage-outer {
+    padding-bottom: 40px;
+}
+
+.trusted-box {
+    border: 1px solid #d0ae888c;
+    max-height: 150px;
+    min-height: 150px;
+    border-radius: 10px;
+    -webkit-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.trusted-box:hover {
+    -webkit-transform: translateY(-8px);
+        -ms-transform: translateY(-8px);
+            transform: translateY(-8px);
+    -webkit-box-shadow: 0 16px 32px rgba(0,0,0,0.06);
+            box-shadow: 0 16px 32px rgba(0,0,0,0.06);
+}
+
+.trusteditem {
+    padding: 50px 0 0 0;
+}
+
+.icon-circle {
+    background: #121323;
+    color: #D0AE88;
+    border-radius: 50%;
+    max-width: 60px;
+    width: 60px;
+    height: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+    margin: 0 auto;
+    font-size: 24px;
+    margin-top: -30px;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+}
+
+.trusted-box:hover .icon-circle {
+    -webkit-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+            transform: scale(1.1);
+}
+
+.trusted-box p {
+    font-size: 14px;
+    color: #333;
+    padding: 0 10px;
+}
+
+
+/* =========================================
+   RESPONSIVE — LARGE TABLETS (≤1199px)
+   ========================================= */
+@media (max-width: 1199px) {
+    .hero-content h1 {
+        font-size: 42px;
+        line-height: 50px;
+    }
+    .hero-content h3 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE — TABLETS (≤991px)
+   ========================================= */
+@media (max-width: 991px) {
+    .mainheader {
+        padding-bottom: 70px;
+    }
+    .topbar {
+        margin-bottom: 30px;
+    }
+    .hero-content {
+        text-align: center;
+        margin-bottom: 36px;
+    }
+    .hero-content h1 {
+        font-size: 36px;
+        line-height: 44px;
+    }
+    .hero-content h3 {
+        font-size: 26px;
+        line-height: 34px;
+    }
+    .hero-content p {
+        margin: 20px auto 0;
+        max-width: 100%;
+    }
+    .typed-wrapper {
+        min-width: auto;
+    }
+    .form-card {
+        max-width: 100%;
+    }
+
+    .glocalmainheading {
+        font-size: 30px;
+        line-height: 38px;
+    }
+
+    .sectionmargin_top {
+        margin-top: 60px;
+    }
+
+    .section-padding {
+        padding: 60px 0;
+    }
+
+    /* Bottlenecks */
+    .problem-box {
+        text-align: center;
+        margin: 0 auto 14px;
+        gap: 14px;
+    }
+
+    /* Process horizontal */
+    .process-horizontal {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+        gap: 10px;
+    }
+    .process-h-step {
+        max-width: 160px;
+    }
+    .step-circle {
+        width: 52px;
+        height: 52px;
+        font-size: 16px;
+    }
+    .process-h-connector {
+        width: 28px;
+    }
+    .process-h-step h5 {
+        font-size: 14px;
+    }
+    .process-h-step p {
+        font-size: 12px;
+    }
+
+    /* Trust Grid */
+    .trust-grid {
+        -ms-grid-columns: 1fr 16px 1fr;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+
+    /* Support / Case Lifecycle */
+    .support-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+        padding: 10px;
+    }
+    .support-col {
+        text-align: left !important;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .support-col-right .support-list li,
+    .support-col .support-list li {
+        padding-left: 26px;
+        padding-right: 0;
+        text-align: left;
+    }
+    .support-col-right .support-list li::before,
+    .support-col .support-list li::before {
+        content: "\2014";
+        left: 0;
+        right: auto;
+    }
+    .support-col-right h5,
+    .support-col-right p,
+    .support-col h5,
+    .support-col p.support-subtitle {
+        text-align: left !important;
+    }
+    .support-section .support-col:first-child {
+        padding-bottom: 30px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #e3d2bf;
+    }
+    /* Service Grid — 1 column on mobile */
+    .service-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+    .service-card {
+        padding: 28px 22px;
+    }
+    .card-icon {
+        width: 54px;
+        height: 54px;
+    }
+
+    /* Testimonial container */
+    .testimonial-container {
+        max-width: 92%;
+        padding: 36px 30px 36px;
+        border-radius: 22px;
+    }
+    .testimonial-big-quote {
+        font-size: 66px;
+    }
+
+    /* Process */
+    .process-connector {
+        margin-left: 36px;
+    }
+    .step-number {
+        font-size: 40px;
+        min-width: 60px;
+    }
+
+    /* Textarea */
+    textarea.form-control {
+        max-height: 64px;
+        min-height: 64px;
+    }
+    .form-card textarea::placeholder {
+        font-size: 13px;
+    }
+
+    /* CTA Footer */
+    .cta-footer {
+        padding: 50px 0 30px;
+    }
+    .cta-content h2 {
+        font-size: 30px;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE — MOBILE LANDSCAPE (≤767px)
+   ========================================= */
+@media (max-width: 767px) {
+    .hero-content h1 {
+        font-size: 32px;
+        line-height: 40px;
+    }
+    .hero-content h3 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .glocalmainheading {
+        font-size: 26px;
+        line-height: 34px;
+    }
+
+    .trust-grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    }
+
+    /* Service Grid — smaller screen */
+    .service-grid {
+        grid-template-columns: 1fr;
+    }
+    .service-card {
+        padding: 24px 18px;
+    }
+    .card-tags li {
+        font-size: 11px;
+        padding: 4px 10px;
+    }
+
+    /* Testimonials */
+    .testimonial-container {
+        max-width: 95%;
+        padding: 30px 20px 28px;
+        border-radius: 20px;
+    }
+    .testimonial-big-quote {
+        font-size: 56px;
+    }
+    .testimonial-card {
+        min-width: 260px;
+        max-width: 260px;
+        padding: 24px 18px 20px;
+    }
+    .testimonial-text {
+        font-size: 13px;
+    }
+    .testimonial-card .author-avatar {
+        width: 44px;
+        height: 44px;
+        font-size: 13px;
+    }
+    .author-name {
+        font-size: 14px;
+    }
+
+    /* Stats bar */
+    .stat-item {
+        font-size: 13px;
+        padding: 0 16px;
+    }
+
+    /* Form buttons */
+    .form-buttons {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        gap: 10px;
+    }
+
+    /* CTA */
+    .cta-content {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .cta-description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .cta-checks {
+        display: inline-block;
+        text-align: left;
+    }
+    .cta-footer {
+        border-top-left-radius: 30px;
+        border-top-right-radius: 30px;
+    }
+    .cta-content h2 {
+        font-size: 26px;
+    }
+
+    /* Process — vertical on mobile */
+    .process-horizontal {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+        gap: 0;
+    }
+    .process-h-step {
+        max-width: 300px;
+    }
+    .process-h-connector {
+        width: 2px;
+        height: 24px;
+        background: -webkit-gradient(linear, left top, left bottom, from(#D0AE88), to(rgba(208,174,136,0.3)));
+        background: linear-gradient(to bottom, #D0AE88, rgba(208,174,136,0.3));
+        margin-top: 0;
+    }
+    .step-circle {
+        width: 50px;
+        height: 50px;
+        font-size: 15px;
+    }
+
+    /* Case tags */
+    .case-tag {
+        padding: 8px 18px;
+        font-size: 13px;
+    }
+
+    /* FAQ */
+    .faq-wrapper .accordion-button {
+        font-size: 15px;
+        padding: 18px 0;
+    }
+
+    /* Footer info */
+    .cta-footer-info a {
+        display: block;
+        margin: 8px 0;
+    }
+    .cta-footer-info .footer-divider {
+        display: none;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE — SMALL MOBILE (≤576px)
+   ========================================= */
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .hero-content h3 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .glocalmainheading {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .form-card {
+        padding: 25px 18px;
+    }
+
+    .sectionmargin_top {
+        margin-top: 50px;
+    }
+
+    .section-padding {
+        padding: 50px 0;
+    }
+
+    .cta-form-card {
+        padding: 25px 18px;
+    }
+
+    .service-card {
+        padding: 20px 14px;
+    }
+
+    .whatwedo-subtitle {
+        font-size: 17px;
+    }
+    .whatwedo-intro {
+        font-size: 14px;
+    }
+
+
+
+    .testimonial-container {
+        max-width: 96%;
+        padding: 24px 16px 22px;
+        border-radius: 18px;
+    }
+    .testimonial-big-quote {
+        font-size: 48px;
+    }
+    .testimonial-card {
+        min-width: 240px;
+        max-width: 240px;
+        padding: 20px 14px 18px;
+    }
+
+
+    .step-content h5 {
+        font-size: 16px;
+    }
+
+    .topbar img {
+        max-width: 110px !important;
+    }
+}
+
+
+/* =========================================
+   RESPONSIVE — VERY SMALL (≤375px)
+   ========================================= */
+@media (max-width: 375px) {
+    .hero-content h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .hero-content h3 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .glocalmainheading {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .testimonial-container {
+        padding: 20px 14px 18px;
+        border-radius: 16px;
+    }
+    .testimonial-big-quote {
+        font-size: 40px;
+    }
+    .testimonial-card {
+        min-width: 220px;
+        max-width: 220px;
+    }
+}

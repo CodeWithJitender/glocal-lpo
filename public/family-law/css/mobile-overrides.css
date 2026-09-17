@@ -1,0 +1,73 @@
+/* 
+====================================================================
+MOBILE OVERRIDES
+====================================================================
+This file is dedicated for specific mobile-size styling adjustments.
+You can easily change simple things like paddings, margins, font-sizes 
+and other layout properties here for screens smaller than 768px (mobile devices).
+
+If you need to target even smaller or larger mobile devices, you can 
+add additional media queries here.
+====================================================================
+*/
+
+@media (max-width: 768px) {
+    /* 
+       Add your mobile-specific styles below.
+       Example: Adjusting padding for support cards. 
+    */
+
+    /* Global Container Padding */
+    .container {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+
+    .support-card {
+        padding: 25px 20px !important;
+    }
+
+    /* Add more class overrides below as needed */
+    .process-step-new {
+        margin-bottom: 0px !important;
+    }
+
+    .process-horizontal-new.slick-slider {
+        display: block !important;
+        padding-bottom: 0px !important;
+        width: 100%;
+    }
+
+    .ihc-heading {
+        font-size: 18px;
+    }
+
+
+    .ihc-body p {
+        font-size: 13px;
+    }
+
+    .topbar {
+        padding: 0px !important;
+    }
+
+    .hero-form-card {
+        margin: 0px !important;
+    }
+
+    .bannercontent {
+        padding: 0px !important;
+    }
+
+    .support-section {
+        padding: 50px 0px !important;
+    }
+
+    .case-marquee-wrapper {
+        padding: 0px;
+    }
+
+    .case-marquee-track {
+        padding-bottom: 0px;
+    }
+}

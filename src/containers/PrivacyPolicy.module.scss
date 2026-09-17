@@ -1,0 +1,85 @@
+.privacySection {
+    background-color: #0a0e14;
+    color: #ffffff;
+    padding: 120px 0 80px;
+    min-height: 100vh;
+}
+
+.contentWrapper {
+    width: 100%;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.lastUpdated {
+    color: #c5a358; 
+    font-size: 0.9rem;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.policyBody {
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.policySection {
+    margin-bottom: 50px;
+
+    p {
+        color: rgba(255, 255, 255, 0.75);
+        line-height: 1.8;
+        font-size: 1.1rem;
+        margin-bottom: 20px;
+    }
+}
+
+.sectionHeading {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 40px 0 20px;
+    font-weight: 700;
+}
+
+.subSection {
+    margin-top: 25px;
+    padding-left: 15px;
+    border-left: 1px solid rgba(197, 163, 88, 0.3); // Subtle gold border for sub-sections
+}
+
+.subHeading {
+    font-size: 1.15rem; // Specifically smaller as requested
+    color: #c5a358;     // Gold accent for legal hierarchy
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.dataList {
+    margin-bottom: 20px;
+    padding-left: 20px;
+
+    li {
+        color: rgba(255, 255, 255, 0.75);
+        line-height: 1.8;
+        margin-bottom: 10px;
+        list-style-type: disc;
+
+        strong {
+            color: #ffffff;
+        }
+    }
+}
+
+.policyLink {
+    color: #ffffff !important;
+    text-decoration: underline;
+    transition: opacity 0.3s ease;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}

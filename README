@@ -1,0 +1,27 @@
+
+# LPO Website
+
+LPO Main website.
+
+Minimum Requirement:
+- Node 20
+- NPM
+- React v18
+- Express v5
+
+Setup:
+- Install packages using `npm ci` command
+
+Run:
+- To run use `npm run dev` command in terminal.
+- Hit `http://localhost:3000/` to preview the local server.
+
+Build:
+- To generate build run `npm run build` command in terminal.
+- Build will be generated and stored in the `build` folder.
+
+Depoy:
+- In order to deploy to server you need to setup vercel cli tool in local.
+
+Enjoy!!!
+

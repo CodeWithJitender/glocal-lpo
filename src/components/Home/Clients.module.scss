@@ -1,0 +1,102 @@
+.clientsSection {
+	overflow: hidden;
+	background: #070c1e;
+	position: relative;
+	z-index: 1;
+	padding-top: 40px;
+}
+
+.useSectionHeading {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.uspSectionText {
+	color: #c9b9b0;
+	font-size: 16px;
+	font-family: Poppins, sans-serif;
+	margin-bottom: 52px;
+	text-align: center;
+	margin-top: 40px;
+}
+
+.logoContainer {
+	position: relative;
+	overflow: hidden;
+
+	&:before,
+	&:after {
+		content: "";
+		position: absolute;
+		z-index: 1000;
+		top: 0;
+		left: 0;
+		width: 25px;
+		height: 100%;
+		background-image: linear-gradient(to right, rgba(7, 12, 30, 0.5), transparent);
+	}
+
+	&:after {
+		left: auto;
+		right: 0;
+		background-image: linear-gradient(to left, rgba(7, 12, 30, 0.5), transparent);
+	}
+}
+
+.marquee {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+	user-select: none;
+
+	&:hover .marqueeContent {
+		animation-play-state: paused;
+	}
+}
+
+.marqueeContent {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: space-around;
+	animation: scroll 40s linear infinite;
+	margin: 0;
+	padding: 0;
+
+	/* Pause animation when reduced-motion is set */
+	@media (prefers-reduced-motion: reduce) {
+		.marqueeContent {
+			animation-play-state: paused !important;
+		}
+	}
+
+	li {
+		display: flex;
+		flex-shrink: 0;
+		flex-direction: column;
+		justify-content: center;
+		width: 200px;
+		margin-right: 20px;
+		border-radius: 6px;
+		overflow: hidden;
+
+		img {
+			width: 100%;
+		}
+	}
+}
+
+@keyframes scroll {
+	0% {
+		transform: translate3d(0, 0, 0);
+	}
+
+	100% {
+		transform: translate3d(-100%, 0, 0);
+	}
+}
+
+@media (max-width: 576px) {
+	.clientsSection {
+		padding-top: 20px;
+	}
+}

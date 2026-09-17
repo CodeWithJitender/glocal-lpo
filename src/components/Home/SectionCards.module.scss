@@ -1,0 +1,94 @@
+.content {
+  position: sticky !important;
+  top: 0px;
+	display: flex;
+  flex-direction: column;
+  height: 80vh;
+  width: 90vw;
+  aspect-ratio: 0.8;
+  margin: auto;
+  border-radius: 16px;
+  text-align: center;
+  margin-bottom: 5vh;
+	justify-content: flex-end;
+	align-items: center;
+	padding-bottom: 52px;
+	overflow: hidden;
+
+	&::before {
+		content: "";
+    position: absolute;
+    background: linear-gradient(0deg, rgba(60,47,46,1) 0%, rgba(60,47,46,0) 70%);
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+	}
+}
+
+.img {
+  width: 100px;
+}
+
+.title {
+  grid-area: content-title;
+  font-weight: normal;
+  font-size: clamp(2rem, 6vw, 3rem);
+	color: #fff8f2;
+	width: 70%;
+	line-height: 1.2;
+	margin-top: 12px;
+	margin-bottom: 8px;
+	font-family: Antonio, sans-serif;
+  font-variation-settings: "slnt" 0, "wdth" 400, "wght" 900, "INKT" 400;
+}
+
+.text {
+  margin: 0;
+  max-width: 500px;
+  grid-area: content-text;
+  text-align: center;
+  padding: 0 1rem;
+  backface-visibility: hidden;
+	color: #c9b9b0;
+	font-family: Poppins, sans-serif;
+	font-size: 18px;
+}
+
+/* Background colors - you'll need to define these */
+.bg-1 {
+	background: url("../../assets/images/usp-image-1.jpg") top 30% center no-repeat;
+	background-size: cover;
+}
+.bg-2 {
+	background: url("../../assets/images/usp-image-2.jpg") top center no-repeat;
+	background-size: cover;
+}
+.bg-3 {
+	background: url("../../assets/images/usp-image-3.jpg") top 30% center no-repeat;
+	background-size: cover;
+}
+.bg-4 {
+	background: url("../../assets/images/usp-image-4.jpg") top center no-repeat;
+	background-size: cover;
+}
+
+@media screen and (max-width: 900px) {
+	.bg-1 {
+		background: url("../../assets/images/usp-mobile-image-1.jpg") top center no-repeat;
+		background-size: cover;
+	}
+	.bg-2 {
+		background: url("../../assets/images/usp-mobile-image-2.jpg") top center no-repeat;
+		background-size: cover;
+	}
+	.bg-3 {
+		background: url("../../assets/images/usp-mobile-image-3.jpg") top center no-repeat;
+		background-size: cover;
+	}
+	.bg-4 {
+		background: url("../../assets/images/usp-mobile-image-4.jpg") top center no-repeat;
+		background-size: cover;
+	}
+}

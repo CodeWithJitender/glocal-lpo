@@ -1,0 +1,81 @@
+.areaOfExpertiseSection {
+	margin-bottom: 60px;
+	overflow: hidden;
+}
+
+.expertiseAreaImage {
+	width: 100%;
+}
+
+.areaOfExpertieseBox {
+	text-align: center;
+}
+
+.legalSupportHeading {
+	margin-bottom: 40px;
+}
+
+.headingSection1 {
+	color: #a4836f;
+	font-size: 60px;
+}
+
+.legalSupportText {
+	color: #c9b9b0;
+	font-size: 16px;
+	font-family: Poppins, sans-serif;
+	margin-bottom: 0;
+}
+
+.expertiseImage {
+	position: relative;
+	margin-bottom: 92px;
+}
+
+.stampImageContainer {
+	position: absolute;
+	bottom: 0;
+	left: calc(50% - 125px);
+	transform: translateY(31%);
+	width: 250px;
+}
+
+.stampImage {
+	width: 100%;
+}
+
+
+@media screen and (max-width: 900px) {
+
+	.serviceInfoSection,
+	.expertiseImage {
+		margin-left: -25px;
+		margin-right: -25px;
+		margin-top: -150px;
+	}
+
+	.legalSupportText {
+		font-size: 18px;
+	}
+
+	.headingSection1 {
+		font-size: clamp(2rem, 5vw, 5rem);
+		margin-bottom: 10px;
+	}
+
+	.legalSupportHeading,
+	.legalSupportText {
+		margin-bottom: 30px;
+	}
+
+	.areaOfExpertiseSection {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.stampImageContainer {
+		width: 150px;
+		left: calc(50% - 75px);
+	}
+}

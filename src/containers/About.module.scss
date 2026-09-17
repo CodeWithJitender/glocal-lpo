@@ -1,0 +1,707 @@
+.mainSection {
+	background: none;
+}
+
+.masterHead {
+	padding: 200px 0px 100px;
+	background: linear-gradient(90deg, rgba(7, 12, 30, 0.6) 0%, rgba(7, 12, 30, 0.35) 45%, rgba(7, 12, 30, 0.05) 75%, rgba(7, 12, 30, 0.15) 100%),
+		linear-gradient(180deg, rgba(7, 12, 30, 0.3) 0%, transparent 35%, rgba(7, 12, 30, 1) 100%),
+		url("../assets/images/about-materhead-bg.jpg") no-repeat top center;
+	background-size: cover;
+}
+
+@media screen and (max-width: 576px) {
+	.masterHead {
+		padding-top: 150px;
+	}
+}
+
+.commonContainer {
+	padding: 0 50px;
+}
+
+.breadcrumb {
+	padding: 0;
+	margin: 0;
+	text-transform: uppercase;
+	color: #a4836f;
+	font-family: Poppins, sans-serif;
+	font-size: 16px;
+	list-style: none;
+	display: block;
+
+	li {
+		&::after {
+			content: "/";
+			margin: 0 8px;
+		}
+	}
+}
+
+.lpoTitle {
+	font-size: 100px;
+	text-shadow: 0 2px 10px rgba(0, 0, 0, 0.65);
+	width: 100%;
+
+	br {
+		display: none;
+	}
+}
+
+.aboutLPO {
+	padding: 50px 50px 150px;
+	// margin-bottom: 300px;
+	// margin-top: 40px;
+}
+
+.aboutHeading {
+	font-family: Poppins, sans-serif;
+	font-size: 20px;
+	color: #fff8f2;
+	margin-bottom: 20px;
+}
+
+.aboutText {
+	color: #c9b9b0;
+	margin: 28px 0;
+}
+
+.newEraSection {
+	padding: 200px 50px 100px;
+	// margin-bottom: 200px;
+	background: url("../assets/images/new-era-section-bg.jpg") no-repeat top center;
+	background-size: cover;
+	position: relative;
+}
+
+.aboutStamp {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	top: 0;
+	width: 200px;
+	height: 200px;
+
+	img {
+		width: 100%;
+	}
+}
+
+.newEraText {
+	color: #c9b9b0;
+	margin-top: 20px;
+}
+
+.weAreStepIn {
+	color: #fff8f2;
+	margin: 20px 0 40px;
+}
+
+.bookButton {
+	display: inline-flex;
+	justify-content: space-between;
+
+	img {
+		margin-left: 16px;
+		width: 30px;
+	}
+}
+
+.metricsContainer {
+	background: url("../assets/images/metrics-section-bg.jpg") no-repeat top center;
+	background-size: cover;
+	overflow: hidden;
+}
+
+.metricsContentContainer {
+	padding-top: 450px;
+}
+
+.metricsItem {
+	background: url("../assets/images/metrics-tile-bg.png") no-repeat top center;
+	background-size: contain;
+	padding: 0px 75px;
+}
+
+.metricsHeading {
+	text-align: center;
+	font-family: Antonio, sans-serif;
+	font-size: 50px;
+	color: #fff8f2;
+}
+
+.metricsTitle {
+	text-align: center;
+	font-family: Antonio, sans-serif;
+	font-size: 20px;
+	color: #a4836f;
+	margin-bottom: 72px;
+}
+
+.metricsText {
+	color: #c9b9b0;
+	text-align: center;
+	margin-top: 12px !important;
+}
+
+.precisionText {
+	text-transform: uppercase;
+	font-family: Antonio, sans-serif;
+	color: #927464;
+	font-size: 6.50vw;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	white-space: nowrap;
+
+	div {
+		animation-duration: 7s;
+		animation-iteration-count: infinite;
+		animation-name: marquee;
+		animation-timing-function: linear;
+	}
+}
+
+@keyframes marquee {
+	from {
+		transform: translateX(0%);
+	}
+
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+.aboutFounder {
+	background: #DEC4A5 url("../assets/images/founder-section-bg.jpg") no-repeat top center;
+	background-size: cover;
+	padding-bottom: 110px;
+	padding-top: 90px !important;
+	position: relative;
+}
+
+.meetTheTeamHeading {
+	color: #070c1e;
+	text-align: center;
+	margin-bottom: 55px;
+}
+
+.teamColumn {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	margin-bottom: 24px;
+}
+
+.teamCard {
+	position: relative;
+	width: 100%;
+	max-width: 390px;
+	height: 510px;
+	border-radius: 20px;
+	overflow: hidden;
+	background-color: #070c1e;
+	border: 1px solid rgba(255, 255, 255, 0.12);
+	box-shadow: 0 14px 34px rgba(7, 12, 30, 0.18);
+	cursor: pointer;
+	display: flex;
+	flex-direction: column;
+	transition: box-shadow 0.35s ease, border-color 0.35s ease, transform 0.35s ease;
+
+	&:hover {
+		transform: translateY(-6px);
+		box-shadow: 0 22px 48px rgba(7, 12, 30, 0.35);
+		border-color: rgba(222, 196, 165, 0.5);
+
+		.cardImage {
+			transform: scale(1.06);
+		}
+
+		.cardContent {
+			transform: translateY(0);
+		}
+	}
+}
+
+.cardImageWrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 385px;
+	overflow: hidden;
+	background-color: #ece7de;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.cardImage {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+	object-position: center;
+	transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+	display: block;
+}
+
+.cardContent {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: #070c1e;
+	padding: 18px 22px 20px;
+	display: flex;
+	flex-direction: column;
+	border-top: 1px solid rgba(222, 196, 165, 0.18);
+	z-index: 2;
+	transform: translateY(65px);
+	transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.cardHeader {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	gap: 12px;
+}
+
+.headerInfo {
+	flex: 1;
+	min-width: 0;
+}
+
+.founderTitle {
+	font-family: Antonio, sans-serif;
+	font-size: 13px;
+	line-height: 1.35;
+	letter-spacing: 0.8px;
+	color: #dec4a5;
+	text-transform: uppercase;
+	font-weight: 600;
+	// min-height: 36px;
+	display: flex;
+	align-items: flex-end;
+	margin-bottom: 4px;
+}
+
+.name {
+	color: #ffffff;
+	font-family: Antonio, sans-serif;
+	font-size: 28px;
+	line-height: 1.15;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-bottom: 4px;
+	white-space: nowrap;
+}
+
+.designation {
+	color: rgba(255, 255, 255, 0.76);
+	font-size: 13.5px;
+	line-height: 1.35;
+	min-height: 20px;
+}
+
+.socialFootprint {
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
+	padding-top: 2px;
+}
+
+.linkedinLink {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.1);
+	border: 1px solid rgba(255, 255, 255, 0.18);
+	transition: all 0.3s ease;
+
+	&:hover {
+		background: #0077b5;
+		border-color: #0077b5;
+		transform: translateY(-2px);
+		box-shadow: 0 4px 12px rgba(0, 119, 181, 0.4);
+	}
+}
+
+.linkedinIcon {
+	width: 17px;
+	height: 17px;
+	object-fit: contain;
+	filter: brightness(0) invert(1);
+}
+
+.bioText {
+	margin-top: 16px;
+	font-family: Poppins, sans-serif;
+	font-size: 13px;
+	color: rgba(255, 255, 255, 0.85);
+	line-height: 1.5;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+
+.actionWrapper {
+	margin-top: 16px;
+	width: 100%;
+}
+
+.viewProfileBtn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	width: 100%;
+	background: #dec4a5;
+	color: #070c1e;
+	font-family: inherit;
+	font-size: 12.5px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding: 9px 20px;
+	border-radius: 25px;
+	border: none;
+	cursor: pointer;
+	transition: all 0.25s ease;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+
+	&:hover {
+		background: #ffffff;
+		color: #070c1e;
+		box-shadow: 0 6px 18px rgba(222, 196, 165, 0.45);
+	}
+
+	.btnArrow {
+		font-size: 15px;
+		transition: transform 0.25s ease;
+	}
+
+	&:hover .btnArrow {
+		transform: translateX(4px);
+	}
+}
+
+.precisionTextContainer {
+	overflow: hidden;
+	padding-top: 100px;
+}
+
+@media screen and (max-width: 1280px) {
+	.metricsHeading {
+		font-size: 40px;
+	}
+
+	.metricsTitle {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.teamCard {
+		height: auto !important;
+		transform: none !important;
+		box-shadow: 0 12px 28px rgba(7, 12, 30, 0.2) !important;
+
+		&:hover {
+			transform: none !important;
+			box-shadow: 0 12px 28px rgba(7, 12, 30, 0.2) !important;
+			border-color: rgba(255, 255, 255, 0.12) !important;
+
+			.cardImage {
+				transform: none !important;
+			}
+
+			.cardContent {
+				transform: none !important;
+			}
+		}
+	}
+
+	.cardImageWrapper {
+		position: relative !important;
+		top: auto !important;
+		left: auto !important;
+		width: 100% !important;
+		height: auto !important;
+		aspect-ratio: 1 / 1 !important;
+		background-color: #ece7de !important;
+	}
+
+	.cardImage {
+		position: relative !important;
+		width: 100% !important;
+		height: 100% !important;
+		max-height: none !important;
+		object-fit: contain !important;
+		object-position: center !important;
+		transform: none !important;
+		transition: none !important;
+	}
+
+	.cardContent {
+		position: relative !important;
+		bottom: auto !important;
+		left: auto !important;
+		right: auto !important;
+		transform: none !important;
+		background: #070c1e !important;
+		padding: 18px 20px 22px !important;
+		border-top: 1px solid rgba(222, 196, 165, 0.18) !important;
+		transition: none !important;
+	}
+
+	.actionWrapper {
+		opacity: 1 !important;
+		visibility: visible !important;
+		pointer-events: auto !important;
+		transform: none !important;
+		margin-top: 14px !important;
+	}
+
+	.viewProfileBtn {
+		display: inline-flex !important;
+		width: 100% !important;
+	}
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 901px) {
+	.metricsItem {
+		max-width: 300px;
+		background-size: 300px 240px;
+		min-height: 250px;
+		padding: 0px 75px;
+	}
+
+	.metricsText {
+		max-width: 350px;
+		margin: 0 0 30px;
+	}
+
+	.headingContainer {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.mainSection {
+		background: none;
+	}
+
+	.masterHead {
+		background: linear-gradient(90deg, rgba(7, 12, 30, 0.6) 0%, rgba(7, 12, 30, 0.35) 45%, rgba(7, 12, 30, 0.05) 75%, rgba(7, 12, 30, 0.15) 100%),
+			linear-gradient(180deg, rgba(7, 12, 30, 0.3) 0%, transparent 35%, rgba(7, 12, 30, 0.5) 100%),
+			url("../assets/images/about-materhead-bg.jpg") no-repeat top center;
+		background-size: cover;
+		padding-top: 150px;
+		padding-bottom: 50px;
+	}
+
+	.aboutStamp {
+		// position: absolute;
+		// left: 50%;
+		// transform: translate(-50%, -50%);
+		// top: 0;
+		width: 150px;
+		height: 150px;
+	}
+
+	.meetTheTeamHeading {
+		margin-bottom: 35px;
+	}
+
+	.teamColumn {
+		margin-bottom: 24px;
+	}
+
+	.teamCard {
+		height: auto;
+		max-width: 440px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		transform: none !important;
+		transition: none !important;
+		box-shadow: 0 12px 28px rgba(7, 12, 30, 0.2);
+
+		&:hover {
+			transform: none !important;
+			box-shadow: 0 12px 28px rgba(7, 12, 30, 0.2) !important;
+			border-color: rgba(255, 255, 255, 0.12) !important;
+
+			.cardImage {
+				transform: none !important;
+			}
+
+			.cardContent {
+				background: #070c1e !important;
+				backdrop-filter: none !important;
+			}
+
+			.cardAction .arrowIcon {
+				transform: none !important;
+			}
+		}
+	}
+
+	.cardImageWrapper {
+		position: relative;
+		width: 100%;
+		height: auto !important;
+		aspect-ratio: 1 / 1 !important;
+		overflow: hidden;
+		background-color: #ece7de !important;
+	}
+
+	.cardImage {
+		width: 100% !important;
+		height: 100% !important;
+		object-fit: contain !important;
+		object-position: center !important;
+		transition: none !important;
+		transform: none !important;
+	}
+
+	.cardContent {
+		position: relative !important;
+		bottom: auto !important;
+		left: auto !important;
+		right: auto !important;
+		transform: none !important;
+		background: #070c1e !important;
+		padding: 18px 20px 22px;
+		border-top: 1px solid rgba(222, 196, 165, 0.18);
+	}
+
+	.actionWrapper {
+		max-height: none !important;
+		opacity: 1 !important;
+		visibility: visible !important;
+		pointer-events: auto !important;
+		overflow: visible !important;
+		transform: none !important;
+		margin-top: 14px !important;
+	}
+
+	.viewProfileBtn {
+		display: inline-flex !important;
+		width: 100% !important;
+	}
+
+	.aboutLPO {
+		margin-bottom: 150px !important;
+	}
+
+	.founderContainer {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	.headingContainer {
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+
+	.commonContainer {
+		padding: 0 16px;
+	}
+
+	.aboutLPO {
+		padding: 0 16px;
+		margin-bottom: 200px;
+	}
+
+	.lpoTitle {
+		font-size: clamp(3.5rem, 6.5vw, 6.5rem);
+		width: 100%;
+	}
+
+	.btnGroup {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+	}
+
+	.newEraSection {
+		padding: 80% 10px 0;
+		background-size: 350%, 110%, 125%;
+		margin-bottom: 100px;
+	}
+
+	.metricsContentContainer {
+		margin: 0 -10px;
+	}
+
+	.metricsItem {
+		background-position: top center;
+		background-size: 300px;
+		min-height: 250px;
+	}
+
+	.metricsTitle {
+		font-size: 20px;
+		color: #a4836f;
+		margin-bottom: 72px;
+		width: 230px;
+	}
+
+	.metricsText {
+		margin: 0 0 50px;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+
+	}
+
+	.metricsText span {
+		display: block;
+		max-width: 300px;
+	}
+
+	.precisionTextContainer {
+		padding-top: 50px;
+	}
+
+	.aboutFounder {
+		padding: 60px 0px 80px !important;
+		background-size: 250%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.teamCard {
+		max-width: 100%;
+	}
+
+	.cardImageWrapper {
+		height: auto !important;
+		aspect-ratio: 1 / 1 !important;
+	}
+
+	.name {
+		font-size: 26px;
+	}
+
+	.founderTitle {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 576px) {
+
+	.aboutText {
+		margin: 10px 0;
+		margin-bottom: 28px;
+	}
+
+}

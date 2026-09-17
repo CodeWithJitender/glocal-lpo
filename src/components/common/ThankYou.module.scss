@@ -1,0 +1,72 @@
+.thankYouSection {
+    background-color: #0a0e14; // Your exact theme color
+    min-height: 100vh;
+    padding: 60px 0; // Removed extra top padding since header is hidden
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; // This creates a consistent gap between text and scheduler
+}
+
+.stampIcon {
+    max-width: 100%;
+    height: auto;
+}
+
+.scheduleHeader {
+    width: 100%;
+}
+
+.subText {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.6;
+    z-index: 2; // Keeps text above any background animations
+}
+
+.calendlyContainer {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    background: transparent; // REMOVES THE WHITE LINE
+    border: none;
+    position: relative;
+
+    // Responsive Height Logic to prevent cut-offs
+    height: 750px;
+
+    @media (max-width: 1024px) {
+        height: 900px;
+    }
+
+    @media (max-width: 768px) {
+        height: 1150px; // Mobile Cal.com is very tall
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+        display: block;
+        overflow: hidden;
+        background: transparent;
+    }
+}
+
+.buttonGroup {
+    margin-top: 50px; // Prevents the button from overlapping the scheduler bottom
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

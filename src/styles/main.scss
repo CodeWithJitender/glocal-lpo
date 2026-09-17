@@ -1,0 +1,19 @@
+body {
+	width: 100%;
+	overflow-x: hidden;
+	overflow-x: clip;
+	margin: 0;
+	padding: 0;
+}
+
+#root {
+	width: 100%;
+	height: 100%;
+	// overflow-x: hidden;
+}
+
+* {
+	:focus-visible {
+		outline: 0 !important;
+	}
+}

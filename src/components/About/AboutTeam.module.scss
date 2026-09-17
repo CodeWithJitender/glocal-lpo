@@ -1,0 +1,31 @@
+.container {
+	position: relative;
+}
+
+.heading {
+	color: #070c1e;
+	font-size: 60px;
+}
+
+.designation {
+	font-size: 14px;
+	color: rgb(66, 54, 53);
+	margin-top: 12px;
+}
+
+.aboutFounder {
+	font-size: 20px;
+	margin-top: 20px;
+	color: #070c1e;
+}
+
+.linkedinIcon {
+	width: 30px;
+	margin-left: 20px;
+}
+
+@media screen and (max-width: 900px) {
+	.heading {
+		font-size: 40px;
+	}
+}

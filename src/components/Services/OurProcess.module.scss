@@ -1,0 +1,80 @@
+.outProcessSection {
+	background-color: #DEC4A5;
+	padding: 60px 0 0;
+}
+
+.sectionDivider {
+	position: relative;
+	text-align: center;
+	margin-top: 60px;
+
+	svg {
+		width: 120px;
+		background: #DEC4A5;
+		position: relative;
+		z-index: 1;
+	}
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		transform: translateY(-50%);
+		height: 1px;
+		width: 100%;
+		background: #3C3A41;
+		left: 0;
+	}
+
+	&::before {
+		top: calc(50% - 1px);
+	}
+
+	&::after {
+		top: calc(50% + 1px);
+	}
+}
+
+.commonContainer {
+	padding: 0 50px;
+}
+
+.heading {
+	color: #000;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.formText {
+	text-align: center;
+}
+
+.timeline {
+	display: flex;
+	flex-direction: column;
+	margin: 20px auto 0;
+	position: relative;
+}
+
+@media screen and (max-width: 900px) {
+	.commonContainer {
+		padding: 0;
+	}
+
+	.outProcessSection {
+		padding: 0px 10px 0px;
+	}
+
+	.timeline {
+		margin-top: 0px;
+	}
+
+	.sectionDivider {
+		margin-top: 20px;
+
+		svg {
+			width: 80px;
+		}
+
+	}
+}
